@@ -17,7 +17,7 @@ phases:
 artifacts:
   files:
     - '**/*'
-  name: 'BuildArtifact'
+  name: BuildArtifact
   secondary-artifacts:
     artifact1:
       files:
