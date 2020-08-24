@@ -15,10 +15,13 @@ phases:
       - echo "SAM packaging completed on `date`"
 
 artifacts:
-  files:
-    - '**/*'
-  name: BuildArtifact
+  # files:
+  #   - '**/*'
+  # name: BuildArtifact
   secondary-artifacts:
+    BuildArtifact:
+      files:
+        - '**/*'
     artifact1:
       files:
         - 'LambdaFunctions/**/*'
