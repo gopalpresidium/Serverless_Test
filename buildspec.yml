@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing"
+  pre_build:
+    commands:
+      - echo "Pre-build testing"
+  build:
+    commands:
+      - echo "Building"
+  post_build:
+    commands:
+      - echo "SAM packaging completed on `date`"
+
+artifacts:
+  files:
+    - '**/*'
+  secondary-artifacts:
+    artifact1:
+      files:
+        - 'LambdaFunctions/**/*'
+        - 'PatientTemplate.yml'
+      name: lambda-function-1
