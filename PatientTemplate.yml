@@ -97,7 +97,6 @@ Resources:
           S3Key: !Ref LambdaFunctionBucketKey
       Handler: LambdaFunctions/read_patient.handler
       Description: AWS Lambda function
-      Handler: index.handler
       MemorySize: 256
       Role: !GetAtt LambdaIamRole.Arn
       Runtime: nodejs12.x
