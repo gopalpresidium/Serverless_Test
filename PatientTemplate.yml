@@ -95,7 +95,7 @@ Resources:
       Code:
           S3Bucket: !Ref LambdaFunctionBucketName
           S3Key: !Ref LambdaFunctionBucketKey
-      Handler: src/read_patient.handler
+      Handler: LambdaFunctions/read_patient.handler
       Description: AWS Lambda function
       Handler: index.handler
       MemorySize: 256
